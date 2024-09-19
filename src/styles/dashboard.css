@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+	font-family: "Red Hat Display";
+	user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.manageContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+header {
+    width: initial;
+    height: 8rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+header > div {
+    display: flex;
+    align-items: center;
+}
+header > div > h1, button {
+    margin-left: 1rem;
+}
+header > div > h1 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #0093A7;
+}
+header > div > p {
+    font-size: 1.5rem;
+}
+header > div > button {
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #0093A7;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+header > div > button:hover {
+    background-color: #007F8D;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+aside {
+    width: 25rem;
+    height: initial;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding-top: 2rem;
+    margin-top: 0.2rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+aside > .menu {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    width: 16rem;
+    height: 3rem;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #d9d9d9;
+}
+
+aside > .menu:hover {
+    background-color: #0093A7;
+    color: #fff;
+    filter: drop-shadow(0 0 0.75rem #0093A7);
+}
+
+aside > .active {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    width: 16rem;
+    height: 3rem;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0093A7;
+}
+
+
+main {
+    width: 100%;
+    height: initial;
+    border: 1px solid #000;
+
+}

@@ -7,8 +7,6 @@ export interface DataType {
   username : string
 }
 
-
-
 export default function App() {
   const [data, setData] = useState<DataType | undefined>(undefined);
 

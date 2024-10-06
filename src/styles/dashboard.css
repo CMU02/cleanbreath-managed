@@ -107,6 +107,16 @@ aside > .active {
 main {
     width: 100%;
     height: initial;
-    border: 1px solid #000;
+}
 
+.Card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    border-radius: 15px;
+    width: 85%;
+    height: 85%;
+    padding: 2.5rem 2.5rem;
+    margin-top: 2rem;
+    margin-left: 6.5rem;
 }

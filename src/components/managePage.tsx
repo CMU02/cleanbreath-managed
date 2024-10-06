@@ -2,6 +2,8 @@ import { useState } from "react";
 import { DataType } from "../App"
 
 import "../styles/dashboard.css";
+import Card from "./card";
+import Feedback from "./feedback";
 
 
 interface ManagePageProps {
@@ -61,7 +63,11 @@ export default function ManagePage(manageData : ManagePageProps) {
                         </div>
                     </aside>
                     <main className="mains">
-                        {activeMenu}
+                        <Card>
+                            {activeMenu === 'feedback' && <Feedback />}
+                            {activeMenu === 'requestSmokingArea' && <div>흡연구역 요청</div>}
+                            {activeMenu === 'notice' && <div>공지사항</div>}
+                        </Card>
                     </main>
                 </div>
             </div>

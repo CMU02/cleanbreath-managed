@@ -1,0 +1,64 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedbackTitle {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.feedbackList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.feedbackRow > tr {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    background-color: #fff;
+    font-size: 1.5rem;
+    height: 2.5rem;
+    align-items: center;
+}
+
+.feedbackContent > .feedbackColumn {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    align-items: center;
+    padding-left: 5rem;
+    font-size: 18px;
+    height: 2.5rem;
+}
+
+.feedbackContent > .feedbackColumn:hover {
+    background-color: #f0f0f0;
+}
+
+.feedbackContent > .feedbackContentDetail {
+    display: flex;
+    padding-left: 5rem;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    background-color: #fff;
+}
+
+.feedbackContent > .feedbackContentDetail > p {
+    font-size: 1.25rem;
+}
+
+.feedbackContent > .feedbackContentDetail > button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 15px;
+}
+
+.feedbackContent > .feedbackContentDetail > button:hover {
+    background-color: #0093A7;
+    color: #fff;
+}
+
